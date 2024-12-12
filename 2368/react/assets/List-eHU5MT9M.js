@@ -1,0 +1,1 @@
+import{r as e,L as r,M as s,B as l}from"./index-CMT5ZWXL.js";const i=e.forwardRef((a,t)=>e.createElement(r,{delay:s},e.createElement(l,{as:"div",ref:t,className:"iui-list",role:"list",...a})));export{i as L};
