@@ -30,13 +30,13 @@ export type InputProps = {
  * <Input size='small' />
  */
 export const Input = React.forwardRef((props, ref) => {
-  const { size, htmlSize, status, className, ...rest } = props;
+  const { as = 'input', size, htmlSize, status, className, ...rest } = props;
   const inputRef = React.useRef<HTMLInputElement>(null);
   const refs = useMergedRefs<HTMLInputElement>(inputRef, ref);
 
   return (
     <Box
-      as='input'
+      as={as}
       className={cx('iui-input', 'iui-field', className)}
       data-iui-size={size}
       data-iui-status={status}
