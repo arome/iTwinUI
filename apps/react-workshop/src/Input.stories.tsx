@@ -23,3 +23,7 @@ export const Small = () => {
 export const Status = () => {
   return <Input placeholder='Positive Input' status='positive' />;
 };
+
+export const AsTextArea = () => {
+  return <Input placeholder='Positive Input' as='textarea' />;
+};
